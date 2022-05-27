@@ -5,7 +5,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
-@Named(value = "InjectTuto")
+@Named(value = "injectTuto")
 @ApplicationScoped
 public class _03_Inject {
 
