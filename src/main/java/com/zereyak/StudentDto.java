@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+//DTO = data transfer object
 public class StudentDto {
     private Long studentID;
     private String studentName;
