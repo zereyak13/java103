@@ -17,10 +17,10 @@ import javax.inject.Named;
 @Log4j2
 
 //cdi => bean
-@Named
+@Named(value = "namedTuto")
 @ApplicationScoped //uygulama çalıştığı sürece aktif olsun.
 public class _01_Named {
 
     private Long namedId;
-    private String data;
+    private String namedData;
 }
