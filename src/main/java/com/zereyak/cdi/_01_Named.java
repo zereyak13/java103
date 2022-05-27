@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.extern.log4j.Log4j2;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
@@ -14,7 +13,6 @@ import javax.inject.Named;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Log4j2
 
 //cdi => bean
 @Named(value = "namedTuto")
@@ -22,5 +20,5 @@ import javax.inject.Named;
 public class _01_Named {
 
     private Long namedId;
-    private String namedData;
+    private String namedData = "Merhabalar Cdi Bean";
 }
