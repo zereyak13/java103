@@ -1,16 +1,19 @@
 package com.zereyak.with_IoC_DI;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 
-@Named(value = "cdsizCalisan")
+@Named(value = "cdliCalisan")
 @ApplicationScoped
 public class Employee {
-    private Boss patron;
+    @Inject
+    private BossInterface bossInterface;
     public Employee(){
-        patron = new Boss();
+
+        //bossInterface = new Boss();
     }
     public String getData(String data){
-        return patron.version(data);
+        return bossInterface.version(data);
     }
 }
